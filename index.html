@@ -1,0 +1,121 @@
+<html lang="en">
+
+<head>
+    <title>Internship Coding Challenge </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        td {
+            display: inline-block;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <form action="/submit.php" method="POST">
+                <table class="table table-borderless">
+                    <tr>
+                        <div>
+                            <td>
+                                <label for="name">Full Name:</label>
+                                <input type="text" id="name">
+                            </td>
+                            <td>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email">
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td>
+                                <label for="address">Address:</label>
+                                <input type="text" id="address">
+                            </td>
+                            <td>
+                                <label for="gender">Gender:</label>
+                                <input type="radio" id="genderMale" name="customRadio">
+                                <label for="genderMale">Male</label>
+                                <input type="radio" id="genderFemale" name="customRadio">
+                                <label for="genderFemale">Female</label>
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td>
+                                <label for="phoneNumber">Phone Number:</label>
+                                <input type="number" id="phoneNumber">
+                            </td>
+                            <td>
+                                <label for="nationality">Nationality:</label>
+                                <input type="text" id="nationality">
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td>
+                                <label for="dob">Date of birth:</label>
+                                <input type="date" id="dob">
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td>
+                                <label for="education">Education Level<span>(Choose recently completed
+                                        degree)</span></label>
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td>
+                                <select name="degree" id="degreeLevel">
+                                    <option value="highSchool">High School Level</option>
+                                    <option value="bachelorDegree">Bachelor's Degree</option>
+                                    <option value="masterDegree">Master's Degree</option>
+                                </select>
+                                <input type="text" placeholder="Degree Name" id="degreeName">
+                                <input type="text" placeholder="College/University" id="collegeName">
+                                <input type="text" placeholder="Grade Obtained" id="gradeObtained">
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td>
+                                <span>Preferred mode of contact:</span>
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td>
+                                <input type="radio" id="selectMail" name="selectContact">
+                                <label for="selectMail">Email</label>
+                                <input type="radio" id="selectPhone" name="selectContact">
+                                <label for="selectPhone">Phone</label>
+                                <input type="radio" id="selectNone" name="selectContact">
+                                <label for="selectNone">None</label>
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td>
+                                <button id="submit">Submit</button>
+                            </td>
+                        </div>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
