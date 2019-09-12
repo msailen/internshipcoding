@@ -1,0 +1,65 @@
+h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.mainWrapper {
+    display: flex;
+    justify-content: center;
+
+}
+
+.wrapper {
+    padding-top: 10px;
+}
+.wrapper div{
+    width: 100%;
+}
+.wrapper div input {
+    width: 60%;
+}
+
+
+.wrapper .radioGroup label {
+    text-align: left;
+    font-weight: bold;
+}
+
+
+.wrapper .radioGroup input {
+    width: auto;
+    font-weight: bold;
+
+    
+}
+
+.wrapper label {
+    padding: 5px;
+    text-align: left;
+    width: 19%;
+    font-weight: bold;
+
+}
+
+.wrapper input {
+    width: 30%;
+}
+
+.submitButton ,.wrapper .radioContact{
+    display: flex;
+    justify-content: center;
+}
+.wrapper .radioContact label{
+    margin-top: -8px;
+}
+.wrapperText{
+    width: auto;
+    font-weight: bold;
+    padding: 5px;
+}
+.navbar a{
+    margin: 5px;
+}
+
+  
+

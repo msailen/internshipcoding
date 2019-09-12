@@ -1,31 +1,29 @@
 <html lang="en">
-    
-    <head>
+<head>
     <title>Internship Coding Challenge </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style>
-        h1 {
-            text-align: center;
-        }
-    </style>
-    </head>
+    <link rel="stylesheet" href="index.css">
+</head>
 
-    <body>
-        <h1>Create and Read Database</h1>
-        <nav class="navbar navbar-expand-sm bg-primary navbar-dark justify-content-center">
+<body>
+    <h1>Create and Read Database</h1>
+    <nav class="navbar navbar-expand-sm bg navbar-dark justify-content-center">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="/index.php">Enter Client Details</a>
+                <a class="btn btn-success" href="/index.php">Enter Client Details</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/view.php">View Client Details</a>
-            </li>
+                <a class="btn btn-success" href="/view.php">View Client Details</a>
+            </li> 
         </ul>
-        </nav>
-    </body>
-</html>
-
+    </nav>
+<div class="container">    
+    <form method="POST" action="/export.php">
+        <button style="float: right; margin-bottom: 3px;" type="submit" name="export" class="btn btn-primary">Export in CSV</button>
+    </form>
+</div>
+<div class="container">
 <?php
 
 $serverName= "sql311.epizy.com";
@@ -93,3 +91,7 @@ if($result){
 $conn->close();
 }
 ?>
+</div>
+    </body>
+
+</html>
